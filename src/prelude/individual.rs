@@ -27,8 +27,12 @@ impl<T: Debug> Individual<T> {
         self.fitness_score = Some(OrderedFloat(value));
     }
 
-    pub fn mut_chromosome(&mut self) -> &mut T{
+    pub fn get_mut_chromosome(&mut self) -> &mut T{
         &mut self.chromosome
+    }
+
+    pub fn get_chromosome(&self) -> &T{
+        & self.chromosome
     }
 }
 
@@ -90,8 +94,6 @@ impl<T: Debug> cmp::Ord for Individual<T>{
 
 #[cfg(test)]
 mod tests{
-    use std::vec;
-
     use super::*;
 
     #[test]
