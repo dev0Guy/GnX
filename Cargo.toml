@@ -1,0 +1,16 @@
+[package]
+name = "GenX"
+version = "0.1.0"
+authors = ["guyarieli17@yahoo.com"]
+edition = "2021"
+
+[lib]
+name = "GenX"
+path ="src/lib.rs"
+
+[dependencies]
+ordered-float = "3.0.0"
+
+[[bin]]
+name = "GenX"
+path = "src/bin.rs"
