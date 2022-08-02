@@ -1,3 +1,3 @@
 <p align="center">
-    <img src="assets/Logo.png" alt="GenX">
+    <img src="public/assets/images/Logo.png" alt="GenX">
 </p>

@@ -3,6 +3,13 @@ name = "GenX"
 version = "0.1.0"
 authors = ["guyarieli17@yahoo.com"]
 edition = "2021"
+exclude = [
+    "public/*",
+]
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+]
 
 [lib]
 name = "GenX"
