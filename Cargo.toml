@@ -3,6 +3,11 @@ name = "GenX"
 version = "0.1.0"
 authors = ["guyarieli17@yahoo.com"]
 edition = "2021"
+description = "Genetic Algorithm🧬, package for Rust🦀 & Python"
+readme = "README.md"
+repository = "https://github.com/dev0Guy/GenX"
+license = "MIT"
+
 exclude = [
     "public/*",
 ]
