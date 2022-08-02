@@ -4,11 +4,11 @@ use std::fmt::Debug;
 #[allow(dead_code)]
 pub struct SolverWrapper<T: Debug>{
     population: Vec<Individual<T>>,
-    mutation: fn(&mut T),
-    mait: fn(&[&T]) -> T,
-    selection: fn(&mut Vec<Individual<T>>),
-    maiting_group: fn(&Vec<Individual<T>>) -> Vec<&[Individual<T>]>,
-    fittness: fn(&T) -> f64,
+    pub mutation: fn(&mut T),
+    pub mait: fn(&[&T]) -> T,
+    pub selection: fn(&mut Vec<Individual<T>>),
+    pub maiting_group: fn(&Vec<Individual<T>>) -> Vec<&[Individual<T>]>,
+    pub fittness: fn(&T) -> f64,
 }
 
 impl<T:Debug> SolverWrapper<T> { 
